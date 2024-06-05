@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <SideNavigation />
-        <div className="w-full p-4 min-h-screen flex flex-col justify-center items-center">
+        <div className="w-full p-4 pt-20 min-h-screen flex flex-col justify-start items-center">
           {children}
         </div>
       </body>

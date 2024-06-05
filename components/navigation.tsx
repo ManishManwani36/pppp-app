@@ -79,7 +79,7 @@ export function SideNavigation() {
   return (
     <div>
       <Sheet>
-        <div className="fixed border w-full p-4 flex justify-between">
+        <div className="fixed border w-full p-4 flex justify-between bg-background">
           <SheetTrigger>
             <Menu className="size-6" />
           </SheetTrigger>

@@ -314,6 +314,7 @@ const DummyData = [
 // you'll often use just a few of them.
 export function BumpChart() {
   return (
+    // @ts-ignore
     <ResponsiveBump
       data={DummyData}
       colors={{ scheme: "spectral" }}

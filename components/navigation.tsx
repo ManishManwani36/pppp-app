@@ -15,15 +15,19 @@ import { useSideBar } from "@/hooks/use-sidebar";
 import { NavigationLinks } from "@/constants/navigation";
 
 export function SideNavigation() {
-  const { isOpen, onOpen, onClose } = useSideBar();
+  const { isOpen, onClose, onToggle } = useSideBar();
   return (
     <div>
-      <Sheet open={isOpen} onOpenChange={onOpen}>
+      <Sheet open={isOpen} onOpenChange={onToggle}>
         <div className="fixed border w-full p-4 flex justify-between bg-background">
           <SheetTrigger>
             <Menu className="size-6" />
           </SheetTrigger>
-          <User className="size-6" />
+          <Button asChild variant="ghost">
+            <Link href="/">
+              <User className="size-6" />
+            </Link>
+          </Button>
         </div>
         <SheetContent side="left">
           <SheetHeader className="text-left">

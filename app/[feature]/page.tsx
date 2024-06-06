@@ -29,9 +29,10 @@ export default function FeaturePage({
           <navFeature.icon />
           {navFeature.name}
         </CardTitle>
+        <p className="text-muted-foreground">Feature coming soon</p>
       </CardHeader>
       <CardContent>
-        <p>Feature page content</p>
+        <p>{navFeature.desc}</p>
       </CardContent>
       <CardFooter>
         <Link href="/">
